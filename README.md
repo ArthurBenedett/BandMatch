@@ -1,186 +1,155 @@
-# 🎸 BandMatch
+# BandMatch
 
-<p align="center">
-  <img src="./public/logo.png" width="180" alt="BandMatch Logo"/>
-</p>
+O BandMatch é uma plataforma focada em **Front-end e consumo de APIs**, desenvolvida para conectar músicos e bandas através de filtros personalizados e integração com APIs musicais. O projeto foi criado com fins educacionais para praticar tecnologias modernas de desenvolvimento web, responsividade e manipulação de dados dinâmicos. Todos os usuários, **bandas e informações presentes na plataforma são fictícios e utilizados apenas para demonstração.**
 
-<p align="center">
-  Plataforma para conectar músicos, bandas e oportunidades musicais 🎶
-</p>
+## Índice
 
----
+1. [Sobre o Projeto](#sobre-o-projeto)
+2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
+3. [Como Iniciar](#como-iniciar)
+4. [Estrutura de Diretórios](#estrutura-de-diretórios)
+5. [Desenvolvimento](#desenvolvimento)
+6. [Integração com APIs](#integração-com-apis)
+7. [Licença](#licença)
 
-# 📑 Sumário
 
-- [📖 Sobre o Projeto](#-sobre-o-projeto)
-- [🚀 Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [✨ Funcionalidades](#-funcionalidades)
-- [📂 Estrutura do Projeto](#-estrutura-do-projeto)
-- [📸 Preview do Projeto](#-preview-do-projeto)
-- [⚙️ Como Rodar o Projeto](#️-como-rodar-o-projeto)
-- [🌐 Integração com CifraClub](#-integração-com-cifraclub)
-- [🎯 Objetivo do Projeto](#-objetivo-do-projeto)
-- [📄 Licença](#-licença)
+### Funcionalidades Principais:
 
----
+- **Filtros Personalizados**: Permite filtrar músicos por idade, instrumentos musicais e gêneros musicais.
+- **Busca de Cifras**: Integração com APIs musicais para pesquisa de cifras, músicas e artistas.
+- **Perfis de Usuários**: Cada músico possui um perfil personalizado com descrição, gostos musicais, instrumentos e portfólio.
+- **Sistema de Bandas**: Exibição de bandas fictícias procurando novos integrantes.
+- **Portfólio Musical**: Visualização de músicas favoritas e repertórios dos usuários.
 
-# 📖 Sobre o Projeto
 
-O **BandMatch** é uma plataforma desenvolvida para conectar músicos, bandas e artistas que desejam criar novos projetos musicais.
+## Tecnologias Utilizadas
+- **Next.js**: Framework React utilizado para construção da interface e renderização das páginas.
+- **JSON Server**: Utilizado para simular uma API REST e armazenar dados fictícios durante o desenvolvimento.
+- **Bootstrap**: Framework CSS utilizado para responsividade e estilização da interface.
 
-A proposta do sistema é facilitar a busca por integrantes através de filtros personalizados, permitindo encontrar pessoas com gostos musicais semelhantes, instrumentos compatíveis e experiências em comum.
+## Como Iniciar
 
-Além disso, a plataforma permite que músicos compartilhem seus portfólios musicais e descubram bandas que estejam procurando novos integrantes.
+### Pré-requisitos
 
----
+Antes de começar, é necessário ter as seguintes ferramentas instaladas em sua máquina:
 
-# 🚀 Tecnologias Utilizadas
+- **Node.js** (versão >= 14.x)
 
-## 🎨 Front-end
-- Next.js
-- React.js
-- JavaScript
-- Bootstrap
-- CSS Modules
-- CSS puro
 
-## ⚙️ Back-end
-- Node.js
-- Express.js
-
-## 🗄️ Banco de Dados
-- MySQL
-
-## 🔐 Autenticação
-- JWT (JSON Web Token)
-
-## 🛠 Ferramentas
-- Git
-- GitHub
-- REST API
-
----
-
-# ✨ Funcionalidades
-
-✅ Sistema de login e cadastro  
-✅ Autenticação com JWT  
-✅ Perfis personalizados para músicos  
-✅ Sistema de filtros por:
-- Idade
-- Instrumento
-- Gênero musical
-
-✅ Exploração de músicos e bandas  
-✅ Portfólio musical dos usuários  
-✅ Sistema de bandas procurando integrantes  
-✅ Interface responsiva  
-✅ Upload de imagens  
-✅ Integração com API do CifraClub  
-
----
-
-# 📂 Estrutura do Projeto
+### 1. Clonar o repositório
 
 ```bash
-📦 BandMatch
- ┣ 📂 public              # Arquivos públicos e imagens
- ┣ 📂 src                 # Código fonte da aplicação
- ┣ 📂 API_CifraClub       # Integração/API relacionada ao CifraClub
- ┣ 📂 cifraclub-api       # Serviços e requisições da API
- ┣ 📂 .next               # Build gerada pelo Next.js
- ┣ 📂 node_modules        # Dependências do projeto
- ┣ 📜 package.json        # Dependências e scripts
- ┣ 📜 next.config.js      # Configuração do Next.js
- ┣ 📜 jsconfig.json       # Configuração de paths/importações
- ┣ 📜 eslint.config.js    # Configuração do ESLint
- ┣ 📜 .gitignore          # Arquivos ignorados pelo Git
- ┣ 📜 server.json         # Configurações do servidor
- ┗ 📜 README.md           # Documentação do projeto
+git clone https://github.com/ArthurBenedett/BandMatch
 ```
 
----
+### 2. Instalar dependências
 
-# 📸 Preview do Projeto
-
-## 🏠 Home
-![Home](./public/previews/home.png)
-
-## 👤 Perfil de Usuário
-![Perfil](./public/previews/profile.png)
-
-## 🎸 Bandas
-![Bandas](./public/previews/bands.png)
-
----
-
-# ⚙️ Como Rodar o Projeto
-
-## 1️⃣ Clone o repositório
+Execute o comando abaixo para instalar as dependências do projeto:
 
 ```bash
-git clone https://github.com/seu-usuario/bandmatch.git
-```
-
----
-
-## 2️⃣ Entre na pasta do projeto
-
-```bash
-cd bandmatch
-```
-
----
-
-## 3️⃣ Instale as dependências
-
-```bash
+cd BandMatch
 npm install
+cd API_CifraClub
+npm install
+cd ..
 ```
 
----
+### 3. Configuração do JSON Server
+O projeto utiliza o **JSON Server** para simular uma API REST com dados fictícios.
+Antes de iniciar o projeto, execute o comando abaixo em um terminal separado para iniciar o servidor na porta **3333**:
+```bash
+json-server --watch server.json --port 3333
+```
+### 4. Inicializando a API do CifraClub
 
-## 4️⃣ Configure as variáveis de ambiente
+Para iniciar a API responsável pelo consumo de cifras e informações musicais, abra um novo terminal e entre na pasta `API_CifraClub`:
 
-Crie um arquivo `.env` na raiz do projeto:
-
-```env
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=sua_senha
-DB_NAME=bandmatch
-JWT_SECRET=secret_key
+```bash
+cd API_CifraClub
 ```
 
----
 
-## 5️⃣ Rode o projeto
+
+Agora execute a API com o comando:
 
 ```bash
 npm run dev
 ```
 
+Se tudo estiver funcionando corretamente, o terminal retornará:
+
+```bash
+Servidor rodando em http://localhost:3000
+Teste a API em: http://localhost:3000/api/cifra?artist=legiao-urbana&song=tempo-perdido
+```
+### 5. Inicializando a API do CifraClub
+
+Para iniciar a API responsável pelo consumo de cifras e informações musicais, abra um novo terminal e entre na pasta `API_CifraClub`:
+
+```bash
+cd API_CifraClub
+```
+
+
+
+Agora execute a API com o comando:
+
+```bash
+npm run dev
+```
+
+Se tudo estiver funcionando corretamente, o terminal retornará:
+
+```bash
+Servidor rodando em http://localhost:3000
+Teste a API em: http://localhost:3000/api/cifra?artist=legiao-urbana&song=tempo-perdido
+```
+
+
+### 6. Inicie o projeto Front-end
+
+Volte para a raiz do projeto e execute:
+
+```bash
+npm run dev
+```
+
+O sistema estará disponível em:
+
+```bash
+http://localhost:3001
+```
 ---
 
-# 🌐 Integração com CifraClub
+## Estrutura de Diretórios
 
-O projeto possui integração com a API do **CifraClub**, permitindo buscar cifras e conteúdos musicais relacionados aos artistas e músicas dos usuários.
+A estrutura de diretórios do projeto segue a organização padrão do Next.js, com separação entre páginas, componentes, APIs e serviços utilizados na aplicação:
+
+```bash
+/public                    # Arquivos públicos estáticos
+/src                       # Código fonte principal
+  /app                     # Páginas do frontend (Next.js)
+  /components              # Componentes reutilizáveis da UI
+  /styles                  # Arquivos de estilização
+  /utils                   # Funções utilitárias
+  /services                # Serviços e consumo de APIs
+/API_CifraClub             # API responsável pela busca de cifras
+/.next                     # Build gerada automaticamente pelo Next.js
+/node_modules              # Dependências do projeto
+/server.json               # Banco de dados fictício utilizado pelo JSON Server
+```
+
+## Desenvolvimento
+
+Este projeto foi desenvolvido utilizando tecnologias modernas de desenvolvimento web, com foco em **Front-end**, consumo de APIs e construção de interfaces responsivas. A aplicação utiliza **Next.js** e **React.js** para criação das páginas e componentes, além de **Bootstrap** e CSS customizado para estilização da interface.
+
+Os dados da aplicação são consumidos através de APIs externas e de uma API fictícia criada com **JSON Server**, permitindo simular requisições e manipulação dinâmica de informações durante o desenvolvimento.
+
+Além disso, o projeto conta com uma API própria para busca de cifras musicais, localizada na pasta `API_CifraClub`, responsável pela integração com conteúdos relacionados ao universo musical.
 
 ---
 
-# 🎯 Objetivo do Projeto
 
-O objetivo do BandMatch é aproximar músicos através da tecnologia, incentivando a criação de bandas, amizades e projetos musicais colaborativos.
+## Licença
 
----
-
-
-
-
-
-
-# 📄 Licença
-
-Este projeto está sob a licença MIT.
-
----
+Este projeto foi desenvolvido para fins educacionais 
