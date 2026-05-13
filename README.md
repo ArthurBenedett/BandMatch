@@ -1,4 +1,13 @@
 # BandMatch
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/af4b676d-448b-44ac-a855-b30269561f46" width="49%"/>
+  <img src="https://github.com/user-attachments/assets/ca7b2871-336d-4b70-953e-bdc82eb86cab" width="49%"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d737dab0-003f-44ff-a2b3-12168abd6179" width="49%"/>
+  <img src="https://github.com/user-attachments/assets/fd7a2bed-556a-4b2b-89ac-2836ce946306" width="49%"/>
+</p>
 
 O BandMatch é uma plataforma focada em **Front-end e consumo de APIs**, desenvolvida para conectar músicos e bandas através de filtros personalizados e integração com APIs musicais. O projeto foi criado com fins educacionais para praticar tecnologias modernas de desenvolvimento web, responsividade e manipulação de dados dinâmicos. Todos os usuários, **bandas e informações presentes na plataforma são fictícios e utilizados apenas para demonstração.**
 
