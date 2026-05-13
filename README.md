@@ -128,9 +128,6 @@ A estrutura de diretórios do projeto segue a organização padrão do Next.js, 
 /src                       # Código fonte principal
   /app                     # Páginas do frontend (Next.js)
   /components              # Componentes reutilizáveis da UI
-  /styles                  # Arquivos de estilização
-  /utils                   # Funções utilitárias
-  /services                # Serviços e consumo de APIs
 /API_CifraClub             # API responsável pela busca de cifras
 /.next                     # Build gerada automaticamente pelo Next.js
 /node_modules              # Dependências do projeto
