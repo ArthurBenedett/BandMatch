@@ -4,13 +4,11 @@ O BandMatch é uma plataforma focada em **Front-end e consumo de APIs**, desenvo
 
 ## Índice
 
-1. [Sobre o Projeto](#sobre-o-projeto)
-2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
-3. [Como Iniciar](#como-iniciar)
-4. [Estrutura de Diretórios](#estrutura-de-diretórios)
-5. [Desenvolvimento](#desenvolvimento)
-6. [Integração com APIs](#integração-com-apis)
-7. [Licença](#licença)
+1. [Tecnologias Utilizadas](#tecnologias-utilizadas)
+2. [Como Iniciar](#como-iniciar)
+3. [Estrutura de Diretórios](#estrutura-de-diretórios)
+4. [Desenvolvimento](#desenvolvimento)
+5. [Licença](#licença)
 
 
 ### Funcionalidades Principais:
