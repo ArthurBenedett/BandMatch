@@ -4,11 +4,14 @@ O BandMatch é uma plataforma focada em **Front-end e consumo de APIs**, desenvo
 
 ## Índice
 
-1. [Tecnologias Utilizadas](#tecnologias-utilizadas)
-2. [Como Iniciar](#como-iniciar)
-3. [Estrutura de Diretórios](#estrutura-de-diretórios)
-4. [Desenvolvimento](#desenvolvimento)
-5. [Licença](#licença)
+1. [Sobre o Projeto](#sobre-o-projeto)
+2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
+3. [Como Iniciar](#como-iniciar)
+4. [Estrutura de Diretórios](#estrutura-de-diretórios)
+5. [Desenvolvimento](#desenvolvimento)
+6. [Integração com APIs](#integração-com-apis)
+7. [Desenvolvedores](#desenvolvedores)
+8. [Licença](#licença)
 
 
 ### Funcionalidades Principais:
@@ -128,6 +131,9 @@ A estrutura de diretórios do projeto segue a organização padrão do Next.js, 
 /src                       # Código fonte principal
   /app                     # Páginas do frontend (Next.js)
   /components              # Componentes reutilizáveis da UI
+  /styles                  # Arquivos de estilização
+  /utils                   # Funções utilitárias
+  /services                # Serviços e consumo de APIs
 /API_CifraClub             # API responsável pela busca de cifras
 /.next                     # Build gerada automaticamente pelo Next.js
 /node_modules              # Dependências do projeto
@@ -141,6 +147,15 @@ Este projeto foi desenvolvido utilizando tecnologias modernas de desenvolvimento
 Os dados da aplicação são consumidos através de APIs externas e de uma API fictícia criada com **JSON Server**, permitindo simular requisições e manipulação dinâmica de informações durante o desenvolvimento.
 
 Além disso, o projeto conta com uma API própria para busca de cifras musicais, localizada na pasta `API_CifraClub`, responsável pela integração com conteúdos relacionados ao universo musical.
+
+---
+
+
+## Desenvolvedores
+
+- [Giovanni Benedetti](https://github.com/GiovanniBBenedetti)
+- [Davi de Souza Leocadio Ramos](https://github.com/DaviLeocadio)
+- Arthur Buscarino Benedetti
 
 ---
 
